@@ -1,6 +1,6 @@
 Package.describe({
   name: 'markoshust:radium',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Add Radium to Meteor',
   git: 'https://github.com/markoshust/meteor-radium.git',
   documentation: 'README.md'
