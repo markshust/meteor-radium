@@ -1,6 +1,6 @@
 Package.describe({
   name: 'markoshust:radium',
-  version: '0.0.3',
+  version: '0.1.0',
   summary: 'Add Radium to Meteor',
   git: 'https://github.com/markoshust/meteor-radium.git',
   documentation: 'README.md'
@@ -8,7 +8,7 @@ Package.describe({
 
 Npm.depends({
   "externalify": "0.1.0",
-  "radium": "0.13.8"
+  "radium": "0.14.1"
 });
 
 Package.onUse(function(api) {
