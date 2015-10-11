@@ -1,6 +1,6 @@
 Package.describe({
   name: 'markoshust:radium',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'Add Radium to Meteor',
   git: 'https://github.com/markoshust/meteor-radium.git',
   documentation: 'README.md'
@@ -22,7 +22,7 @@ Package.onUse(function(api) {
     "app.browserify.options.json"
   ]);
 
-  api.addFiles("window.react.js", "client");
+  api.addFiles("window.react.js", "client", "server");
 
   api.export("Radium", "client");
 });
