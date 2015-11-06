@@ -1,29 +1,25 @@
 Package.describe({
   name: 'markoshust:radium',
-  version: '0.1.0',
-  summary: 'Add Radium to Meteor',
+  version: '0.14.3',
+  summary: 'Add the React Radium package to Meteor',
   git: 'https://github.com/markoshust/meteor-radium.git',
   documentation: 'README.md'
 });
 
 Npm.depends({
-  "externalify": "0.1.0",
-  "radium": "0.14.1"
+  'externalify': '0.1.0',
+  'radium': '0.14.3'
 });
 
 Package.onUse(function(api) {
+  api.versionsFrom('1.2.1');
   api.use([
-    "react@0.1.7",
-    "cosmos:browserify@0.5.0"
+    'cosmos:browserify@0.8.1',
+    'react@0.14.1_1'
   ]);
-
   api.addFiles([
-    "app.browserify.js",
-    "app.browserify.options.json"
+    'app.browserify.js',
+    'app.browserify.options.json'
   ]);
-
-  api.addFiles("window.react.js", "client", "server");
-
-  api.export("Radium", "client");
+  api.export('Radium');
 });
-

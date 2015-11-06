@@ -3,9 +3,8 @@
     "externalify": {
       "global": true,
       "external": {
-        "react": "React.require"
+        "react": "Package.react-runtime.React.require"
       }
     }
   }
 }
-
